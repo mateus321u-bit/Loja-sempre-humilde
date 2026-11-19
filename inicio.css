@@ -93,7 +93,7 @@ header {
     color: var(--roxo);
 }
 
-.hamburger{
+.hamburger {
     display: none;
 }
 
@@ -583,7 +583,7 @@ footer {
         letter-spacing: 1px;
     }
 
-    .hamburger{
+    .hamburger {
         display: none;
     }
 
@@ -592,8 +592,8 @@ footer {
         height: 40px;
         flex-shrink: 0;
     }
-    
-    .carrinho::before{
+
+    .carrinho::before {
         top: -11px;
         left: 25px;
     }
@@ -777,7 +777,8 @@ footer {
         width: 35px;
         height: 35px;
     }
-    .carrinho::before{
+
+    .carrinho::before {
         top: -10px;
         left: 20px;
     }
