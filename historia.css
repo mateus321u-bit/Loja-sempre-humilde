@@ -1,0 +1,173 @@
+
+/* ===== PÁGINA NOSSA HISTÓRIA ===== */
+
+.pagina-historia {
+    width: 100%;
+    padding: 70px 8%;
+    background: var(--preto);
+    color: var(--branco);
+}
+
+/* ===== HISTÓRIA DA MARCA ===== */
+
+.historia-marca {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr);
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto 90px;
+}
+
+.historia-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    padding: 35px;
+    background: var(--preto-2);
+    border: 1px solid #29292e;
+}
+
+.historia-logo img {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+}
+
+.historia-texto {
+    min-width: 0;
+}
+
+.subtitulo-historia {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--roxo);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.historia-texto h1,
+.video-titulo h2 {
+    margin-bottom: 25px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.historia-texto p {
+    margin-bottom: 18px;
+    color: var(--cinza);
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.frase-historia {
+    display: block;
+    margin-top: 28px;
+    padding-left: 15px;
+    border-left: 3px solid var(--roxo);
+    color: var(--branco);
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* ===== ÁREA DO VÍDEO ===== */
+
+.historia-video {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.video-titulo {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.video-titulo h2 {
+    margin-bottom: 12px;
+}
+
+.video-titulo p {
+    color: var(--cinza);
+    font-family: "Inter", sans-serif;
+    line-height: 1.7;
+}
+
+.video-container {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--preto-2);
+    border: 1px solid #29292e;
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width: 800px) {
+    .pagina-historia {
+        padding: 55px 5%;
+    }
+
+    .historia-marca {
+        grid-template-columns: 1fr 1.2fr;
+        gap: 30px;
+    }
+
+    .historia-logo {
+        padding: 20px;
+    }
+}
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 600px) {
+    .pagina-historia {
+        padding: 40px 18px;
+    }
+
+    .historia-marca {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        margin-bottom: 65px;
+    }
+
+    .historia-logo {
+        padding: 30px;
+    }
+
+    .historia-logo img {
+        max-width: 260px;
+    }
+
+    .historia-texto h1,
+    .video-titulo h2 {
+        font-size: 2.7rem;
+    }
+
+    .historia-texto p {
+        font-size: 0.95rem;
+    }
+
+    .frase-historia {
+        font-size: 1.2rem;
+    }
+
+    .video-titulo {
+        text-align: left;
+    }
+}

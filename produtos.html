@@ -22,6 +22,11 @@
                     <li><a href="historia.html">Nossa história</a></li>
                 </ul>
             </nav>
+            <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    stroke="white" stroke-width="2" stroke-linecap="round">
+                    <path d="M3 6H21 M3 12H21 M3 18H21" />
+                </svg >
+
             <a class="carrinho" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180" width="30"
                     height="30">
                     <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"
@@ -38,24 +43,32 @@
     </header>
     <main>
         <section class="banner">
-    <img src="img/banner.png" class="fundo" alt="">
+            <picture>
 
-    <div class="particulas"></div>
-</section>
+                <source media="(max-width: 400px)" srcset="img/banner-celular-400px-sem-bordas.jpg">
+
+
+                <source media="(max-width: 600px)" srcset="img/banner-tablet-600px.jpg">
+
+
+                <img class="fundo" src="img/banner.png">
+            </picture>
+            <div class="particulas"></div>
+        </section>
 
 
         <section class="todos-produtos" ">
-            <p class="subtitulo">ENCONTRE SEU ESTILO</p>
+            <p class=" subtitulo">ENCONTRE SEU ESTILO</p>
             <h2>Todos os produtos<span>.</span></h2>
 
             <div class="filtros">
                 <a class="selecionado " href="#ball">dragon ball</a>
                 <a href="#anime">animes</a>
                 <a href="#games">Games</a>
-               <a href="#pop">Pop Culture</a>
+                <a href="#pop">Pop Culture</a>
             </div>
             <div class="categoria01" id="ball">
-                <p>01 /  COLLECTION </p>
+                <p>01 / COLLECTION </p>
                 <h2>Dragon Ball</h2>
             </div>
             <div class="produtos-grid">
@@ -108,7 +121,7 @@
                 </article>
 
             </div>
-             <div class="categoria01" id="anime">
+            <div class="categoria01" id="anime">
                 <p>02 / COLLECTION </p>
                 <h2>Anime</h2>
             </div>
@@ -148,7 +161,7 @@
                         <strong>R$ 79,90</strong>
                         <a href="#">Comprar</a>
                     </div>
-                    
+
                 </article>
 
             </div>
@@ -192,7 +205,7 @@
                         <strong>R$ 79,90</strong>
                         <a href="#">Comprar</a>
                     </div>
-                    
+
                 </article>
 
             </div>
@@ -236,11 +249,11 @@
                         <strong>R$ 79,90</strong>
                         <a href="#">Comprar</a>
                     </div>
-                    
+
                 </article>
 
             </div>
-        
+
         </section>
 
     </main>

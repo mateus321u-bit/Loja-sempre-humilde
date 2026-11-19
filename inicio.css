@@ -93,6 +93,10 @@ header {
     color: var(--roxo);
 }
 
+.hamburger{
+    display: none;
+}
+
 
 .carrinho {
     display: grid;
@@ -319,7 +323,7 @@ header {
     display: grid;
     min-width: 0;
     background: var(--preto-2);
-      background: #111113;
+    background: #111113;
     border: 1px solid #252529;
     transition: .3s;
     overflow: hidden;
@@ -579,10 +583,19 @@ footer {
         letter-spacing: 1px;
     }
 
+    .hamburger{
+        display: none;
+    }
+
     .carrinho {
         width: 40px;
         height: 40px;
         flex-shrink: 0;
+    }
+    
+    .carrinho::before{
+        top: -11px;
+        left: 25px;
     }
 
     /* BANNER PRINCIPAL */
@@ -618,11 +631,11 @@ footer {
 
     .banner-foto img {
         height: 100%;
-      grid-row: 1;
-        
+        grid-row: 1;
+
     }
 
-    .banner-texto{
+    .banner-texto {
         grid-row: 2;
     }
 
@@ -726,16 +739,28 @@ footer {
    RESPONSIVIDADE - ATÉ 400PX
 ============================== */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
 
     /* MENU */
     .barradnav {
-        justify-content: center;
-        gap: 12px;
+        display: flex;
+        position: relative;
+    }
+
+    .menu {
+        display: none;
     }
 
     .marca img {
-        max-height: 45px;
+        max-height: 60px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hamburger {
+        order: -1;
+        display: block;
     }
 
     .menu {
@@ -751,6 +776,10 @@ footer {
     .carrinho {
         width: 35px;
         height: 35px;
+    }
+    .carrinho::before{
+        top: -10px;
+        left: 20px;
     }
 
     /* BANNER PRINCIPAL */
@@ -782,7 +811,7 @@ footer {
     }
 
     .banner-foto img {
-       max-height: 100%;
+        max-height: 100%;
     }
 
     /* FAIXA */

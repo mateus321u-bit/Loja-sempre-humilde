@@ -216,8 +216,7 @@ font-family: var(--fonte-titulo);
     }
 
     .fundo {
-        width: 100%;
-        height: auto;
+        width: 600px;
         object-fit: cover;
     }
 
